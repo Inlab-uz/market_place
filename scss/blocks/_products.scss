@@ -12,15 +12,29 @@
 }
 
 .card {
+  padding: 0;
+  margin: 0;
   width: 270px;
   position: relative;
+  border: 1px solid #E7E7E7;
+  padding-bottom: 22px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.card img {
+  border-radius: 10px 10px 0 0;
+}
+
+.card ~ .card {
+  margin-left: 10px;
 }
 
 .card .icons {
   display: flex;
   align-items: center;
-  position: relative;
-  top: 30px;
+  position: absolute;
+  top: 10px;
 }
 
 .card__cart-button {
@@ -92,6 +106,18 @@
   letter-spacing: 0em;
   text-align: left;
   color: #151875;
+}
+
+.content button {
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  position: relative;
+  top: 3px;
+  left: -30px;
 }
 
 .map {
